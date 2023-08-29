@@ -25,3 +25,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+<br><br><br><br>
+<hr>
+<center><h1>Useful commands:</h1></center>
+- <b>ng g c</b> <font color="yellow"><i>path/component-name</i></font> &rarr; generates new component and links it to the app module automatically
