@@ -1,0 +1,7 @@
+p{
+    color: red;
+    border: solid red 1px;
+    width: fit-content;
+    padding: 0 5px 0 5px;
+    border-radius: 10px;
+}

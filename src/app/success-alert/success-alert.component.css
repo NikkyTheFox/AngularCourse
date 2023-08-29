@@ -1,0 +1,7 @@
+p{
+    color: green;
+    font-weight: bold;
+    border: black 2px dotted;
+    width: fit-content;
+    padding: 20px 10px 20px 10px;
+}
