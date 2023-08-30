@@ -16,7 +16,7 @@ export class ServersComponent {
 
   allowNewServer = false;
   serverCreationStatus = 'No server was created!';
-  serverName = '';
+  serverName = 'testing two way binding';
 
   constructor(){
     setTimeout(() => {
