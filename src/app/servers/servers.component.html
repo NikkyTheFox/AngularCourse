@@ -3,11 +3,12 @@
     type="text"
     class="form-control"
     (input)="onUpdateServerName($event)"> $event passes data emitted during event to the function -->
-    <input
+
+<input
     type="text"
     class="form-control"
     [(ngModel)]="serverName"> <!-- Binds data in both directions -->
-<p>{{ serverName }}</p>
+<!-- <p>{{ serverName }}</p> -->
 
 <button 
     class="btn btn-primary"
