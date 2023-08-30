@@ -15,8 +15,9 @@ import { Component } from '@angular/core';
 export class ServersComponent {
 
   allowNewServer = false;
+  serverCreated = false;
   serverCreationStatus = 'No server was created!';
-  serverName = 'placeholder text for two-way binding';
+  serverName = 'placeholder text from two-way binding';
 
   constructor(){
     setTimeout(() => {
@@ -27,6 +28,7 @@ export class ServersComponent {
   ngOnInit(){}
 
   onCreateServer(){
+    this.serverCreated = true;
     this.serverCreationStatus = 'A server was created! Name is '+ this.serverName;
   }
 
