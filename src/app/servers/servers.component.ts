@@ -4,13 +4,24 @@ import { Component } from '@angular/core';
   selector: 'app-servers', // Normal Selector
   //selector: '[app-servers]', // Attribute Selector
   //selector: '.app-servers', // Class Selector
+
   //Use of `` allows to write with new lines and indents
-  template: `
+  /*template: `
   <app-server></app-server>
-  <app-server></app-server>`, 
-  //templateUrl: './servers.component.html',
+  <app-server></app-server>`, */
+  templateUrl: './servers.component.html',
   styleUrls: ['./servers.component.css']
 })
 export class ServersComponent {
+
+  allowNewServer = false;
+
+  constructor(){
+    setTimeout(() => {
+      this.allowNewServer = true;
+    }, 2000);
+  }
+
+  ngOnInit(){}
 
 }
