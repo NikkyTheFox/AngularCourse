@@ -18,7 +18,10 @@
 <p>{{ allowNewServer }}</p>
 <p [innerText]="allowNewServer"></p>
 <!-- <p>{{ serverCreationStatus }}</p> -->
-<p *ngIf="serverCreated">Server was created, server name is "{{ serverName }}"</p>
+<p *ngIf="serverCreated; else noServer">Server was created, server name is "{{ serverName }}"</p> <!-- If-Else creating "local variable" used to display Else -->
+<ng-template #noServer> <!-- Else based on "local variable" -->
+    <p>No server was created.</p>
+</ng-template>
 
 <app-server></app-server>
 <app-server></app-server>
