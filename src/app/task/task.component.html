@@ -1,0 +1,6 @@
+<button (click)="onClick()">Display Details</button>
+<p [ngStyle]="{visibility: getVisibility()}">{{ content }}</p>
+<div class="arrayDisplayContainer" 
+    *ngFor="let number of clicks"
+    [ngClass]="{'blueLog': number >= 5}">{{ number }}
+</div>
