@@ -6,33 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  serverElements = [{
-    type: 'server',
-    name: 'Testserver',
-    content: 'Just a test'
-  }];
+  ticks: number[] = [];
 
-  onServerAdded(serverData: {serverName: string, serverContent: string}) {
-    this.serverElements.push({
-      type: 'server',
-      name: serverData.serverName,  
-      content: serverData.serverContent
-    });
-  }
-
-  onBlueprintAdded(blueprintData: {blueprintName: string, blueprintContent: string}) {
-    this.serverElements.push({
-      type: 'blueprint',
-      name: blueprintData.blueprintName,
-      content: blueprintData.blueprintContent
-    });
-  }
-
-  onChangeFirst(){
-    this.serverElements[0].name = 'Changed!';
-  }
-
-  onDestroyFirst(){
-    this.serverElements.splice(0, 1);
+  onGameTick(eventData: {i: number}){
+    console.log('here');
+    this.ticks.push(eventData.i);
+    console.log(eventData.i);
   }
 }
