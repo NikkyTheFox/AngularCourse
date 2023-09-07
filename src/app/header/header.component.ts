@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  @Output() pageSelect = new EventEmitter<string>();
   collapsed = true;
+  
+
+
+  onPress(value: string){
+    this.pageSelect.emit(value);
+  }
 }
