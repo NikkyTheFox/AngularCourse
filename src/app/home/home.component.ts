@@ -9,7 +9,6 @@ import { map, filter } from 'rxjs/operators';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit, OnDestroy {
-
   private firstObsSubscription: Subscription;
 
   constructor() {
